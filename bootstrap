@@ -1,0 +1,3 @@
+#!/bin/bash -e
+echo $AUTHORIZED_KEYS > /root/.ssh/authorized_keys
+exec /usr/sbin/sshd -D
